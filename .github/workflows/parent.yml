@@ -2,9 +2,5 @@ on:
   push
 
 jobs:
-  job:
-    runs-on: ubuntu-slim
-    steps:
-      - name: workflow call
-        uses: ./.github/workflows/child.yml
-
+  child:
+    uses: ./.github/workflows/child.yml
