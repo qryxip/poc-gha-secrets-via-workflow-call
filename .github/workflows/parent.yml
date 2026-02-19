@@ -4,3 +4,4 @@ on:
 jobs:
   child:
     uses: ./.github/workflows/child.yml
+    secrets: inherit
