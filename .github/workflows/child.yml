@@ -1,0 +1,12 @@
+on:
+  workflow_call
+
+jobs:
+  job:
+    runs-on: ubuntu-slim
+    environment: e
+    steps:
+      - name: NOP
+        run: ':'
+        env:
+          SECRET: ${{ secrets.SECRET }}
